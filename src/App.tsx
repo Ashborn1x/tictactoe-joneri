@@ -1,3 +1,5 @@
+'use client';
+
 import { MotionConfig } from 'motion/react';
 import { useCallback, useState } from 'react';
 import { GameBoard } from './components/GameBoard';
