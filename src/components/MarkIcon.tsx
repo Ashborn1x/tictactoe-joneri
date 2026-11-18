@@ -12,7 +12,7 @@ interface MarkIconProps {
 const SIZE_CLASSES: Record<NonNullable<MarkIconProps['size']>, string> = {
   sm: 'w-4 h-4',
   md: 'w-6 h-6',
-  lg: 'w-11 h-11 sm:w-13 sm:h-13',
+  lg: 'w-11 h-11 sm:w-[52px] sm:h-[52px]',
 };
 
 export function MarkIcon({
@@ -40,6 +40,9 @@ export function MarkIcon({
         viewBox="0 0 40 40"
         fill="none"
         aria-hidden="true"
+        width={size === 'sm' ? 16 : size === 'md' ? 24 : 44}
+        height={size === 'sm' ? 16 : size === 'md' ? 24 : 44}
+        style={{ width: size === 'sm' ? 16 : size === 'md' ? 24 : 44, height: size === 'sm' ? 16 : size === 'md' ? 24 : 44, flexShrink: 0 }}
         className={`${sizeClass} ${colorClass} ${isGhost ? 'opacity-25' : ''} transition-transform duration-150`}
       >
         <motion.path
@@ -69,6 +72,9 @@ export function MarkIcon({
       viewBox="0 0 40 40"
       fill="none"
       aria-hidden="true"
+      width={size === 'sm' ? 16 : size === 'md' ? 24 : 44}
+      height={size === 'sm' ? 16 : size === 'md' ? 24 : 44}
+      style={{ width: size === 'sm' ? 16 : size === 'md' ? 24 : 44, height: size === 'sm' ? 16 : size === 'md' ? 24 : 44, flexShrink: 0 }}
       className={`${sizeClass} ${colorClass} ${isGhost ? 'opacity-25' : ''} transition-transform duration-150`}
     >
       <motion.circle

@@ -67,7 +67,7 @@ export default function App() {
 
   return (
     <MotionConfig reducedMotion="user">
-      <div className="relative min-h-dvh w-full flex items-center justify-center px-4 py-8 sm:py-10 overflow-hidden bg-[#080B12]">
+      <div className="relative min-h-dvh w-full flex items-center justify-center px-4 py-8 sm:py-10 bg-[#080B12]">
         {/* Subtle ambient spatial lighting */}
         <div
           aria-hidden="true"
